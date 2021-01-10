@@ -12,6 +12,9 @@ import WebnarioRegisterVerify from '../pages/WebnarioRegisterVerify';
 import WebnarioRegisterComplete from '../pages/WebnarioRegisterComplete';
 import TelegramPage from '../pages/TelegramPage';
 import WebnarioContent from '../pages/WebnarioContent';
+import HomePage from '../pages/HomePage';
+
+
 
 const Routes = () => (
   <ConnectedRouter history={history}>
@@ -21,6 +24,7 @@ const Routes = () => (
       <Guest path="/webnario/register-verify" exact component={WebnarioRegisterVerify} />
       <Guest path="/webnario/register-complete" exact component={WebnarioRegisterComplete} />
       <Guest path="/telegram" exact component={TelegramPage} />
+      {/* <Guest path="/home" exact component={HomePage} /> */}
       <Private path="/dashboard" exact component={() => {}} />
       <Route
         path="*"
